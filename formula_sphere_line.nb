@@ -1,0 +1,345 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11309,        335]
+NotebookOptionsPosition[     10870,        318]
+NotebookOutlinePosition[     11227,        334]
+CellTagsIndexPosition[     11184,        331]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Solve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"x", "-", "earth11"}], ")"}], "/", "ii"}], " ", "\[Equal]", 
+      " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"y", " ", "-", " ", "earth12"}], ")"}], " ", "/", "jj"}]}], 
+     " ", ",", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"y", " ", "-", " ", "earth12"}], ")"}], " ", "/", "jj"}], " ",
+       "\[Equal]", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"z", " ", "-", " ", "earth13"}], ")"}], "/", "kk"}]}], ",", 
+     " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"x", "-", "earth11"}], ")"}], "^", "2"}], " ", "+", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"y", " ", "-", " ", "earth12"}], ")"}], " ", "^", "2"}], " ",
+        "+", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"z", " ", "-", " ", "earth13"}], ")"}], "^", "2"}]}], " ", 
+      "\[Equal]", " ", 
+      RowBox[{"r", "^", "2"}]}]}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", " ", "y", ",", " ", "z"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7405394607790966`*^9, 3.740539470073244*^9}, {
+  3.7405395085722885`*^9, 3.7405396756764607`*^9}, {3.740539722586009*^9, 
+  3.7405397334688807`*^9}, {3.740539783585637*^9, 3.7405398867387853`*^9}, {
+  3.740539918654436*^9, 3.7405399240779314`*^9}, {3.740540000989255*^9, 
+  3.7405401712481995`*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"2aa2c817-6e52-4cf8-bceb-7950a33a3f25"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Rule]", 
+      FractionBox[
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "earth12"}], " ", "ii"}], "+", 
+        RowBox[{"earth11", " ", "jj"}], "+", 
+        FractionBox[
+         RowBox[{"earth12", " ", 
+          SuperscriptBox["ii", "3"]}], 
+         RowBox[{
+          SuperscriptBox["ii", "2"], "+", 
+          SuperscriptBox["jj", "2"], "+", 
+          SuperscriptBox["kk", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"earth12", " ", "ii", " ", 
+          SuperscriptBox["jj", "2"]}], 
+         RowBox[{
+          SuperscriptBox["ii", "2"], "+", 
+          SuperscriptBox["jj", "2"], "+", 
+          SuperscriptBox["kk", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"earth12", " ", "ii", " ", 
+          SuperscriptBox["kk", "2"]}], 
+         RowBox[{
+          SuperscriptBox["ii", "2"], "+", 
+          SuperscriptBox["jj", "2"], "+", 
+          SuperscriptBox["kk", "2"]}]], "-", 
+        FractionBox[
+         RowBox[{"ii", " ", 
+          SqrtBox[
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["ii", "2"], " ", 
+             SuperscriptBox["jj", "2"], " ", 
+             SuperscriptBox["r", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["jj", "4"], " ", 
+             SuperscriptBox["r", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["jj", "2"], " ", 
+             SuperscriptBox["kk", "2"], " ", 
+             SuperscriptBox["r", "2"]}]}]]}], 
+         RowBox[{
+          SuperscriptBox["ii", "2"], "+", 
+          SuperscriptBox["jj", "2"], "+", 
+          SuperscriptBox["kk", "2"]}]]}], "jj"]}], ",", 
+     RowBox[{"y", "\[Rule]", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"earth12", " ", 
+         SuperscriptBox["ii", "2"]}], "+", 
+        RowBox[{"earth12", " ", 
+         SuperscriptBox["jj", "2"]}], "+", 
+        RowBox[{"earth12", " ", 
+         SuperscriptBox["kk", "2"]}], "-", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["ii", "2"], " ", 
+           SuperscriptBox["jj", "2"], " ", 
+           SuperscriptBox["r", "2"]}], "+", 
+          RowBox[{
+           SuperscriptBox["jj", "4"], " ", 
+           SuperscriptBox["r", "2"]}], "+", 
+          RowBox[{
+           SuperscriptBox["jj", "2"], " ", 
+           SuperscriptBox["kk", "2"], " ", 
+           SuperscriptBox["r", "2"]}]}]]}], 
+       RowBox[{
+        SuperscriptBox["ii", "2"], "+", 
+        SuperscriptBox["jj", "2"], "+", 
+        SuperscriptBox["kk", "2"]}]]}], ",", 
+     RowBox[{"z", "\[Rule]", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "earth13"}], " ", "jj"}], "+", 
+         RowBox[{"earth12", " ", "kk"}], "-", 
+         FractionBox[
+          RowBox[{"earth12", " ", 
+           SuperscriptBox["ii", "2"], " ", "kk"}], 
+          RowBox[{
+           SuperscriptBox["ii", "2"], "+", 
+           SuperscriptBox["jj", "2"], "+", 
+           SuperscriptBox["kk", "2"]}]], "-", 
+         FractionBox[
+          RowBox[{"earth12", " ", 
+           SuperscriptBox["jj", "2"], " ", "kk"}], 
+          RowBox[{
+           SuperscriptBox["ii", "2"], "+", 
+           SuperscriptBox["jj", "2"], "+", 
+           SuperscriptBox["kk", "2"]}]], "-", 
+         FractionBox[
+          RowBox[{"earth12", " ", 
+           SuperscriptBox["kk", "3"]}], 
+          RowBox[{
+           SuperscriptBox["ii", "2"], "+", 
+           SuperscriptBox["jj", "2"], "+", 
+           SuperscriptBox["kk", "2"]}]], "+", 
+         FractionBox[
+          RowBox[{"kk", " ", 
+           SqrtBox[
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["ii", "2"], " ", 
+              SuperscriptBox["jj", "2"], " ", 
+              SuperscriptBox["r", "2"]}], "+", 
+             RowBox[{
+              SuperscriptBox["jj", "4"], " ", 
+              SuperscriptBox["r", "2"]}], "+", 
+             RowBox[{
+              SuperscriptBox["jj", "2"], " ", 
+              SuperscriptBox["kk", "2"], " ", 
+              SuperscriptBox["r", "2"]}]}]]}], 
+          RowBox[{
+           SuperscriptBox["ii", "2"], "+", 
+           SuperscriptBox["jj", "2"], "+", 
+           SuperscriptBox["kk", "2"]}]]}], "jj"]}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"x", "\[Rule]", 
+      FractionBox[
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "earth12"}], " ", "ii"}], "+", 
+        RowBox[{"earth11", " ", "jj"}], "+", 
+        FractionBox[
+         RowBox[{"earth12", " ", 
+          SuperscriptBox["ii", "3"]}], 
+         RowBox[{
+          SuperscriptBox["ii", "2"], "+", 
+          SuperscriptBox["jj", "2"], "+", 
+          SuperscriptBox["kk", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"earth12", " ", "ii", " ", 
+          SuperscriptBox["jj", "2"]}], 
+         RowBox[{
+          SuperscriptBox["ii", "2"], "+", 
+          SuperscriptBox["jj", "2"], "+", 
+          SuperscriptBox["kk", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"earth12", " ", "ii", " ", 
+          SuperscriptBox["kk", "2"]}], 
+         RowBox[{
+          SuperscriptBox["ii", "2"], "+", 
+          SuperscriptBox["jj", "2"], "+", 
+          SuperscriptBox["kk", "2"]}]], "+", 
+        FractionBox[
+         RowBox[{"ii", " ", 
+          SqrtBox[
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["ii", "2"], " ", 
+             SuperscriptBox["jj", "2"], " ", 
+             SuperscriptBox["r", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["jj", "4"], " ", 
+             SuperscriptBox["r", "2"]}], "+", 
+            RowBox[{
+             SuperscriptBox["jj", "2"], " ", 
+             SuperscriptBox["kk", "2"], " ", 
+             SuperscriptBox["r", "2"]}]}]]}], 
+         RowBox[{
+          SuperscriptBox["ii", "2"], "+", 
+          SuperscriptBox["jj", "2"], "+", 
+          SuperscriptBox["kk", "2"]}]]}], "jj"]}], ",", 
+     RowBox[{"y", "\[Rule]", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"earth12", " ", 
+         SuperscriptBox["ii", "2"]}], "+", 
+        RowBox[{"earth12", " ", 
+         SuperscriptBox["jj", "2"]}], "+", 
+        RowBox[{"earth12", " ", 
+         SuperscriptBox["kk", "2"]}], "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["ii", "2"], " ", 
+           SuperscriptBox["jj", "2"], " ", 
+           SuperscriptBox["r", "2"]}], "+", 
+          RowBox[{
+           SuperscriptBox["jj", "4"], " ", 
+           SuperscriptBox["r", "2"]}], "+", 
+          RowBox[{
+           SuperscriptBox["jj", "2"], " ", 
+           SuperscriptBox["kk", "2"], " ", 
+           SuperscriptBox["r", "2"]}]}]]}], 
+       RowBox[{
+        SuperscriptBox["ii", "2"], "+", 
+        SuperscriptBox["jj", "2"], "+", 
+        SuperscriptBox["kk", "2"]}]]}], ",", 
+     RowBox[{"z", "\[Rule]", 
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "earth13"}], " ", "jj"}], "+", 
+         RowBox[{"earth12", " ", "kk"}], "-", 
+         FractionBox[
+          RowBox[{"earth12", " ", 
+           SuperscriptBox["ii", "2"], " ", "kk"}], 
+          RowBox[{
+           SuperscriptBox["ii", "2"], "+", 
+           SuperscriptBox["jj", "2"], "+", 
+           SuperscriptBox["kk", "2"]}]], "-", 
+         FractionBox[
+          RowBox[{"earth12", " ", 
+           SuperscriptBox["jj", "2"], " ", "kk"}], 
+          RowBox[{
+           SuperscriptBox["ii", "2"], "+", 
+           SuperscriptBox["jj", "2"], "+", 
+           SuperscriptBox["kk", "2"]}]], "-", 
+         FractionBox[
+          RowBox[{"earth12", " ", 
+           SuperscriptBox["kk", "3"]}], 
+          RowBox[{
+           SuperscriptBox["ii", "2"], "+", 
+           SuperscriptBox["jj", "2"], "+", 
+           SuperscriptBox["kk", "2"]}]], "-", 
+         FractionBox[
+          RowBox[{"kk", " ", 
+           SqrtBox[
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["ii", "2"], " ", 
+              SuperscriptBox["jj", "2"], " ", 
+              SuperscriptBox["r", "2"]}], "+", 
+             RowBox[{
+              SuperscriptBox["jj", "4"], " ", 
+              SuperscriptBox["r", "2"]}], "+", 
+             RowBox[{
+              SuperscriptBox["jj", "2"], " ", 
+              SuperscriptBox["kk", "2"], " ", 
+              SuperscriptBox["r", "2"]}]}]]}], 
+          RowBox[{
+           SuperscriptBox["ii", "2"], "+", 
+           SuperscriptBox["jj", "2"], "+", 
+           SuperscriptBox["kk", "2"]}]]}], "jj"]}]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.7405401382451963`*^9, 3.740540179971895*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"724cc5ae-81de-4fa2-9b84-b6c98f480d1a"]
+}, Open  ]]
+},
+WindowSize->{759, 833},
+WindowMargins->{{Automatic, 572}, {64, Automatic}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (2018\:5e743\:670828\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1592, 44, 66, "Input",ExpressionUUID->"2aa2c817-6e52-4cf8-bceb-7950a33a3f25"],
+Cell[2175, 68, 8679, 247, 508, "Output",ExpressionUUID->"724cc5ae-81de-4fa2-9b84-b6c98f480d1a"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
